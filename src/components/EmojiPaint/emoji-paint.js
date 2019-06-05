@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import EmojiPicker from './../EmojiPicker/emoji-picker';
-
 import './emoji-paint.css';
 import EmojiGrid from '../EmojiGrid/emoji-grid';
 
@@ -138,8 +137,8 @@ export default class App extends Component {
 					</div>
 				</div>
 				<div className="emoji_paint_user">
-					<img src="https://www.compulite.ca/wp-content/uploads/2016/02/slack-logo.png" alt="User Profile"></img>
-					<span className="user_name">Slack User</span>
+					<img src="soccer.jpeg" alt="User Profile"></img>
+					<span className="user_name">Futbol Fan</span>
 					<span className="current_time">{timeToDisplay}</span>
 				</div>
 				<div className="emoji_paint_grid">
