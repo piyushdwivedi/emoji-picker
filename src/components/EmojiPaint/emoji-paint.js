@@ -122,7 +122,7 @@ export default class App extends Component {
 							<input
 								type="text"
 								className="emoji-paint__dimension_input"
-								onChange={(e) => this.onSizeChange({ width: e.target.value, height: this.state.height })}
+								onBlur={(e) => this.onSizeChange({ width: e.target.value, height: this.state.height })}
 								defaultValue={this.state.width}
 							/>
 						</label>
@@ -131,7 +131,7 @@ export default class App extends Component {
 							<input
 								type="text"
 								className={"emoji-paint__dimension_input " + (this.state.invalidHeight ? 'error' : '')}
-								onChange={(e) => this.onSizeChange({ height: e.target.value, width: this.state.width })}
+								onBlur={(e) => this.onSizeChange({ height: e.target.value, width: this.state.width })}
 								defaultValue={this.state.height}
 							/>
 						</label>
