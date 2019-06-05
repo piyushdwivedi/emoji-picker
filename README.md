@@ -12,5 +12,3 @@ Emoji Picker to select and render an emoji inside a grid
 ### Running the app
 1. npm run setup -- Only required first time or after adding a new dependency
 2. npm start 
-
-<img src="https://github.com/piyushdwivedi/emoji-picker/blob/master/public/mockui.png" alt="Emoji Picker" width=500 height=600>
