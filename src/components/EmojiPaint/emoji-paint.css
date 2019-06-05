@@ -1,0 +1,115 @@
+.emoji-paint {
+  background: white;
+  border: 1px solid #AAA;
+  border-radius: 6px;
+  overflow: auto; }
+
+.emoji-paint__toolbar {
+  background: #F9F9F9;
+  display: flex;
+  padding: 20px; }
+
+.emoji-paint__controls {
+  flex: 1;
+  position: relative; }
+
+.emoji-paint__control {
+  border-radius: 4px;
+  border: 1px solid #AAA;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  font-size: 28px;
+  height: 44px;
+  line-height: 42px;
+  margin-right: 10px;
+  overflow: hidden;
+  padding: 2px;
+  width: 60px; }
+
+.emoji-paint__control_icon {
+  height: 100%; }
+
+.emoji-paint__dimension {
+  font-weight: bold;
+  margin-left: 10px; }
+  .emoji-paint__dimension.error {
+    color: red; }
+    .emoji-paint__dimension.error input {
+      border: 1px solid red; }
+
+.emoji-paint__dimension_input {
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 44px;
+  margin-left: 10px;
+  text-align: center;
+  width: 40px; }
+
+.emoji-picker {
+  background: white;
+  border: 1px solid #AAA;
+  border-radius: 6px;
+  padding: 6px;
+  position: absolute;
+  top: 50px;
+  width: 174px; }
+
+.emoji-picker__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.emoji-picker__caret {
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 29px; }
+  .emoji-picker__caret:after, .emoji-picker__caret:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .emoji-picker__caret:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 4px;
+    margin-left: -4px; }
+  .emoji-picker__caret:before {
+    border-color: rgba(170, 170, 170, 0);
+    border-bottom-color: #aaa;
+    border-width: 5px;
+    margin-left: -5px; }
+
+.emoji-picker__control {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 28px;
+  height: 40px;
+  line-height: 44px;
+  width: 40px; }
+  .emoji-picker__control:hover {
+    background: #E9E9E9; }
+  .emoji-picker__control:focus {
+    outline: none; }
+
+.emoji_paint_user {
+  display: grid;
+  grid-template-columns: 50px 80px 60px;
+  align-items: center; }
+  .emoji_paint_user img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px; }
+  .emoji_paint_user span.user_name {
+    font-weight: bold; }
+  .emoji_paint_user span.current_time {
+    font-size: 12px;
+    color: #AAA; }

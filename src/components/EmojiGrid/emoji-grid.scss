@@ -1,0 +1,58 @@
+.grid-boxes {
+    border: 1px solid #AAA;
+    height: 100%;
+		width: 100%;
+		padding: 4px;
+    cursor: pointer;
+    span {
+        font-size: 28px;
+    }
+		border-right: none;
+		border-bottom: none;
+		&:first-child {
+			border-top-left-radius: 5px;
+		}
+		&:last-child {
+			border-bottom-right-radius: 5px;
+		}
+		&.last_row {
+			border-bottom: 1px solid #AAA;
+		}
+		&.last_column {
+			border-right: 1px solid #AAA;
+		}
+		&.top-right {
+			border-top-right-radius: 5px;
+		}
+		&.bottom-left {
+			border-bottom-left-radius: 5px;
+		}
+}
+
+.emoji_paint_footer {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 20px;
+	padding-bottom: 10px; }
+  
+  .emoji_paint_footer button {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 35px;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 6px;
+	margin-left: 15px;
+	padding: 5px; }
+  
+  .emoji_paint_footer button:first-child {
+	width: 85px; }
+  
+  .emoji_paint_footer button:last-child {
+	width: 150px;
+	color: #fff;
+	background-color: limegreen; }
+  
+  .emoji_paint_footer button:hover {
+	cursor: pointer; }
